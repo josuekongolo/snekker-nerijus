@@ -1,0 +1,411 @@
+/* =====================================================
+   SNEKKER NERIJUS JUCINSKAS - Responsive Styles
+   ===================================================== */
+
+/* =====================================================
+   TABLET (768px+)
+   ===================================================== */
+@media (min-width: 768px) {
+    /* Typography */
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Header */
+    .header-inner {
+        padding: var(--spacing-sm) var(--spacing-lg);
+    }
+
+    .main-nav {
+        display: block;
+    }
+
+    .mobile-toggle {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.375rem;
+    }
+
+    .hero-content {
+        padding: var(--spacing-xxl) var(--spacing-lg);
+    }
+
+    /* Quick Contact */
+    .quick-contact-inner {
+        gap: var(--spacing-xl);
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Area Content */
+    .area-content {
+        flex-direction: row;
+    }
+
+    .area-map {
+        flex: 1;
+    }
+
+    .area-info {
+        flex: 1;
+    }
+
+    .area-locations {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Service Detail */
+    .service-detail-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .service-detail-text {
+        flex: 1;
+    }
+
+    .service-detail-image {
+        flex: 0 0 45%;
+    }
+
+    .service-detail-image img {
+        height: 350px;
+    }
+
+    .service-detail:nth-child(even) .service-detail-content {
+        flex-direction: row-reverse;
+    }
+
+    /* Pricing Cards */
+    .pricing-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* About Page */
+    .about-intro-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about-intro-text {
+        flex: 1;
+    }
+
+    .about-intro-image {
+        flex: 0 0 45%;
+    }
+
+    .about-intro-image img {
+        height: 400px;
+    }
+
+    /* Values Grid */
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Local Section */
+    .local-content {
+        flex-direction: row;
+    }
+
+    .local-text {
+        flex: 1;
+    }
+
+    .local-areas {
+        flex: 0 0 40%;
+    }
+
+    /* Contact Grid */
+    .contact-grid {
+        flex-direction: row;
+    }
+
+    .contact-info {
+        flex: 0 0 40%;
+    }
+
+    .contact-form-wrapper {
+        flex: 1;
+    }
+
+    /* Form Row */
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+/* =====================================================
+   DESKTOP (1024px+)
+   ===================================================== */
+@media (min-width: 1024px) {
+    /* Typography */
+    h1 {
+        font-size: 3rem;
+    }
+
+    /* Header */
+    .header-cta {
+        display: block;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero h1 {
+        font-size: 3.25rem;
+    }
+
+    .hero-content {
+        max-width: 550px;
+        padding: var(--spacing-xxl);
+    }
+
+    .hero-image {
+        display: block;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Values Grid */
+    .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    }
+}
+
+/* =====================================================
+   LARGE SCREENS (1200px+)
+   ===================================================== */
+@media (min-width: 1200px) {
+    /* Hero */
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    /* Service Detail Image */
+    .service-detail-image img {
+        height: 400px;
+    }
+
+    /* About Image */
+    .about-intro-image img {
+        height: 450px;
+    }
+}
+
+/* =====================================================
+   MOBILE SPECIFIC (max-width: 767px)
+   ===================================================== */
+@media (max-width: 767px) {
+    /* Reduce section padding on mobile */
+    .section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    /* Hero buttons stack */
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    /* CTA buttons stack */
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+    }
+
+    /* Page header */
+    .page-header {
+        padding-top: calc(73px + var(--spacing-xl));
+        padding-bottom: var(--spacing-lg);
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    /* Service detail */
+    .service-detail-image img {
+        height: 250px;
+    }
+
+    /* Pricing */
+    .pricing-value {
+        font-size: 1.75rem;
+    }
+
+    /* Contact form */
+    .contact-form-wrapper,
+    .contact-info {
+        padding: var(--spacing-md);
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+    }
+
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-contact-item {
+        justify-content: center;
+    }
+}
+
+/* =====================================================
+   SMALL MOBILE (max-width: 374px)
+   ===================================================== */
+@media (max-width: 374px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9375rem;
+    }
+}
+
+/* =====================================================
+   HIGH DPI / RETINA
+   ===================================================== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Use higher resolution images when available */
+}
+
+/* =====================================================
+   PRINT STYLES
+   ===================================================== */
+@media print {
+    .header,
+    .mobile-nav,
+    .hero-buttons,
+    .cta-section,
+    .footer {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .section {
+        padding: 1rem 0;
+        page-break-inside: avoid;
+    }
+}
+
+/* =====================================================
+   REDUCED MOTION
+   ===================================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* =====================================================
+   DARK MODE SUPPORT (Optional)
+   ===================================================== */
+@media (prefers-color-scheme: dark) {
+    /* Future dark mode styles can be added here */
+}
